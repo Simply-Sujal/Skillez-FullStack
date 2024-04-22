@@ -1,0 +1,43 @@
+#bob {
+  position: absolute;
+  background: rgb(219, 148, 219);
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  top: 0;
+  left: 50%;
+  animation: pulse 0.5s cubic-bezier(0.51, 0, 0.4, 0.5) alternate infinite;
+  transform: translate(-50%, 0) scale(1);
+  color: #000; /* Default color for light backgrounds */
+}
+
+/* Additional styles for dark backgrounds */
+body.dark #bob {
+  color: #fff; /* White color for dark backgrounds */
+}
+
+@keyframes pulse {
+  from {
+    width: 50px;
+    height: 50px;
+  }
+  to {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+#bob.active {
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+  100% {
+    transform: translate(-50%, 0) scale(2);
+    opacity: 0;
+  }
+  0% {
+    transform: translate(-50%, 0) scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,91 @@
+.destination {
+  margin: 4rem 8rem;
+}
+
+.destination h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.destination .abt-pdes {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.first-des {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+
+.first-des-reverse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+  flex-direction: row-reverse;
+}
+
+.des-txt {
+  width: 45%;
+  text-align: start;
+  font-size: 1.1rem;
+}
+
+.des-txt h2 {
+  padding-bottom: 1rem;
+}
+
+.image {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  z-index: -99;
+}
+
+.image img {
+  width: 49%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.image img:nth-child(2) {
+  position: absolute;
+  top: -10%;
+  right: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .destination {
+    margin: 4rem 2rem;
+  }
+
+  .first-des {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2.5rem;
+  }
+
+  .first-des-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4.5rem;
+  }
+
+  .des-txt {
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+    margin: 1.8rem 0;
+  }
+
+  .image img {
+    height: 250px;
+  }
+}
